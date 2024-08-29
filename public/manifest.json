@@ -1,0 +1,9 @@
+{
+  "name": "DarDoc: Best Home Health Care in Abu Dhabi and Dubai",
+  "short_name": "DarDoc",
+  "description": "DarDoc: Best Home Health Care in Abu Dhabi and Dubai",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FFFFFF"
+}
