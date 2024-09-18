@@ -9,6 +9,10 @@ const HeroVideo: FC<HeroVideoProps> = ({ path, loadingImg }) => {
       height={{ base: "400px", md: "calc(100vh - var(--nav-bar-height))" }}
       pos={"relative"}
       color={"white"}
+      backgroundImage={`url(${loadingImg})`}
+      backgroundSize={"cover"}
+      backgroundPosition={{ base: "80%", md: "center" }}
+      backgroundRepeat={"no-repeat"}
     >
       <video
         loop
@@ -18,7 +22,14 @@ const HeroVideo: FC<HeroVideoProps> = ({ path, loadingImg }) => {
         autoPlay={true}
         controls={false}
         preload="auto"
-        style={{ objectFit: "cover", width: "100%", height: "100%", position: "absolute", inset: "0px", zIndex: 0 }}
+        style={{
+          objectFit: "cover",
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          inset: "0px",
+          zIndex: 0,
+        }}
       >
         <track kind="captions" />
         <source src={path} type="video/mp4" />
