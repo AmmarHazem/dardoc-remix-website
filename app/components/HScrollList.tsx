@@ -24,7 +24,7 @@ export const HScrollList: FC<HScrollListProps> = ({
   leadingTrailingPadding = true,
   onScroll,
 }) => {
-  const { width: screenWidth } = useWindowSize();
+  const { width: screenWidth } = useWindowSize({ listenForResize: false });
   const scrollElementRef = useRef<HTMLDivElement>(null);
   const [margin, setMargin] = useState(0);
 
