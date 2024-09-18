@@ -39,6 +39,7 @@ function ClientCacheProvider({ children }: ClientCacheProviderProps) {
 }
 
 async function hydrate() {
+  // eslint-disable-next-line import/no-named-as-default-member
   await i18next
     .use(Backend)
     .use(LanguageDetector)
