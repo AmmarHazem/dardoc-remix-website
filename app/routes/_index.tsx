@@ -1,13 +1,20 @@
-import { json } from "@remix-run/node";
+import { json, MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import HeroVideo from "~/components/HeroVideo";
 import MobileHomeScrollList from "~/components/MobileHomeScrollList";
 import PersonalizedCareText from "~/components/PersonalizedCareText";
 import getHomePageData, { HomePageResponseModel } from "~/services/getHomePageData";
+import getHomePageMetaTags from "~/services/getHomePageMetaTags";
 
 export const loader = () => {
   const data = getHomePageData();
   return json<HomePageResponseModel>(data);
+};
+
+export const handle = { i18n: "translation" };
+
+export const meta: MetaFunction = () => {
+  return getHomePageMetaTags();
 };
 
 export default function Index() {

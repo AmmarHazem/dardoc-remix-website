@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dardoc.com/sitemap.xml

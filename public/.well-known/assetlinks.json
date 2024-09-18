@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dardoc",
+      "sha256_cert_fingerprints": [
+        "AD:05:12:2D:4D:5F:0B:8D:30:6B:05:9F:4B:07:E1:D1:4A:B2:87:F6:BF:5C:E9:B2:2B:04:C1:56:9D:BF:30:9B"
+      ]
+    }
+  }
+]

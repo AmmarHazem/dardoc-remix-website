@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
-const HeroVideo: FC<HeroVideoProps> = ({ path, loadingImg }) => {
+const HeroVideo: FC<HeroVideoProps> = ({ loadingImg }) => {
   return (
     <Box
       as="section"
@@ -14,7 +14,7 @@ const HeroVideo: FC<HeroVideoProps> = ({ path, loadingImg }) => {
       backgroundPosition={{ base: "80%", md: "center" }}
       backgroundRepeat={"no-repeat"}
     >
-      <video
+      {/* <video
         loop
         playsInline
         poster={loadingImg}
@@ -35,7 +35,7 @@ const HeroVideo: FC<HeroVideoProps> = ({ path, loadingImg }) => {
         <source src={path} type="video/mp4" />
         <source src={path} type="video/ogg" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <Box
         gap={4}
         pos={"absolute"}
