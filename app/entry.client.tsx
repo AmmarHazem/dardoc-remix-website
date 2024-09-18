@@ -72,3 +72,11 @@ if (window.requestIdleCallback) {
   // https://caniuse.com/requestidlecallback
   setTimeout(hydrate, 1);
 }
+
+const po = new PerformanceObserver((list) => {
+  for (const entry of list.getEntries()) {
+    console.log("long-animation-frame", entry.toJSON());
+  }
+});
+
+po.observe({ type: "long-animation-frame", buffered: true });
